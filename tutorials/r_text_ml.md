@@ -1,7 +1,7 @@
 Supervised Text Classification
 ================
 Wouter van Atteveldt & Kasper Welbers
-April 2019
+2020-01
 
 -   [Packages](#packages)
 -   [Data](#data)
@@ -19,10 +19,11 @@ This handout contains a very brief introduction to using supervised machine lear
 Packages
 ========
 
-We will use `quanteda` for text processing and some machine learning, and `tidyverse` for general data cleaning.
+We will use `quanteda` for text processing and some machine learning, and `tidyverse` for general data cleaning. Since the quanteda 2.0 update we also need the `quanteda.textmodels` package.
 
 ``` r
 library(quanteda)
+library(quanteda.textmodels)
 library(tidyverse)
 ```
 
