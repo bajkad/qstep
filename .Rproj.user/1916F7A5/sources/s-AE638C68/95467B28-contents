@@ -1,0 +1,51 @@
+library(quanteda)
+dtm <- dfm(data_corpus_inaugural, stem = FALSE, 
+           remove = stopwords("english"), remove_punct = TRUE)
+
+myDict <- dictionary(list(terror = c("terror*"), 
+                          economy = c("job*", "business*", "econom*"))) 
+
+dict_dtm <- dfm_lookup(dtm, myDict, nomatch = "_unmatched") 
+tail(dict_dtm)
+
+dict = dictionary(data_dictionary_LSD2015)
+dict_dtm <- dfm_lookup(dtm, dict, nomatch = "_unmatched")
+tail(dict_dtm)
+
+
+set.seed(2)
+sample(1:10000, size = 10)
+
+set.seed(2) 
+library(quanteda)
+dtm <- dfm(data_corpus_inaugural, stem = TRUE, 
+           remove = stopwords("english"), remove_punct = TRUE)
+docvars(dtm, "is_prewar") <- docvars(dtm, "Year") < 1945 
+
+train_dtm <- dfm_sample(dtm, size = 40)
+test_dtm <- dtm[setdiff(docnames(dtm), docnames(train_dtm)), ] 
+
+nb_model <- textmodel(train_dtm, y = docvars(train_dtm, "is_prewar")) 
+library(quanteda)
+quanteda::textmodel
+pred_nb <- predict(nb_model, newdata = test_dtm)
+table(prediction = pred_nb, is_prewar = docvars(test_dtm, "is_prewar"))
+
+
+
+
+
+
+library(topicmodels) 
+library(quanteda)
+texts = corpus_reshape(data_corpus_inaugural, to = "paragraphs")
+
+par_dtm <- dfm(texts, stem = TRUE,             
+               remove_punct = TRUE, remove = stopwords("english"))
+par_dtm <- dfm_trim(par_dtm, min_termfreq = 5)     # remove rare terms
+par_dtm <- convert(par_dtm, to = "topicmodels") # convert to topicmodels format
+
+set.seed(1)
+lda_model <- topicmodels::LDA(par_dtm, method = "Gibbs", k = 5) 
+terms(lda_model, 5)
+

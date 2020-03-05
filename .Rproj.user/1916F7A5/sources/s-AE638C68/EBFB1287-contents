@@ -1,1 +1,17 @@
 
+text <-  c(d1 = "Cats are awesome!",
+           d2 = "We need more cats!",
+           d3 = "This is a soliloquy about a cat.")
+
+text
+
+library(quanteda)
+
+?dfm
+dtm = dfm(text, stem = T, remove = stopwords('english'))
+
+
+text = "Let's look at some basic preprocessing steps"
+
+library(corpustools)
+tc = create_tcorpus(text, udpipe_model = 'english-ewt')

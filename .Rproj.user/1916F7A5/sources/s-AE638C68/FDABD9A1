@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583416107363.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4209051915",
+    "id" : "FDABD9A1",
+    "lastKnownWriteTime" : 1583416413,
+    "last_content_update" : 1583416413796,
+    "path" : "~/Dropbox/Qstep_R_text_analysis/tutorials/r_text_ml.Rmd",
+    "project_path" : "tutorials/r_text_ml.Rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "cursorPosition" : "92,0",
+        "scrollLine" : "86"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

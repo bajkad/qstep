@@ -1,0 +1,6 @@
+text <-  c(d1 = "Cats are awesome!",
+           d2 = "We need more cats!",
+           d3 = "This is a soliloquy about a cat.")
+
+library(quanteda)
+dfm(text, stem = T, remove = stopwords(‘english’))    
