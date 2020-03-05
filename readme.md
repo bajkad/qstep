@@ -21,9 +21,9 @@ Note that the tutorial material on this page is based on similar tutorials on th
 
 * Session 1: [Preprocessing and basics](tutorials/preprocessing_and_basics.md) 
 * Session 2: Pick one of the three types of text analysis techniques to practice with
-    * Rule-based: [Lexical sentiment analysis](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/sentiment_analysis.md)
-    * Unsupervised: [LDA Topic modeling](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/r_text_lda.md) 
-    * Supervised: [Text classification](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/r_text_ml.md)
+    * Rule-based: [Lexical sentiment analysis](tutorials/sentiment_analysis.md)
+    * Unsupervised: [LDA Topic modeling](tutorials/r_text_lda.md) 
+    * Supervised: [Text classification](tutorials/r_text_ml.md)
 * Free practice material: In case you need more material
     * Do your own analysis by [getting data from The Guardian API](https://github.com/ccs-amsterdam/r-course-material/blob/master/tutorials/guardian.md)
     * Use the [online appendix](https://github.com/kasperwelbers/text_analysis_in_R/blob/master/files/Text_Analysis_in_R.md) of the [Text Analysis in R](http://vanatteveldt.com/p/welbers-text-r.pdf) paper. 

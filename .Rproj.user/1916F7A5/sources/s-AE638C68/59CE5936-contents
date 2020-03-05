@@ -1,0 +1,12 @@
+library(quanteda)
+dtm <- dfm(data_corpus_inaugural, stem = FALSE, 
+           remove = stopwords("english"), remove_punct = TRUE)
+
+myDict <- dictionary(list(terror = c("terror*"), 
+                          economy = c("job*", "business*", "econom*"))) 
+dict_dtm <- dfm_lookup(dtm, myDict, nomatch = "_unmatched") 
+tail(dict_dtm)
+
+dict = dictionary(data_dictionary_LSD2015)
+dict_dtm <- dfm_lookup(dtm, dict, nomatch = "_unmatched") 
+tail(dict_dtm)
