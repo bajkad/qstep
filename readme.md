@@ -8,10 +8,10 @@ Note that the tutorial material on this page is based on similar tutorials on th
 # Schedule
 
 * 09:00 - 09:30: Introduction
-* 09:30 - 12:00: Session 1: Importing, cleaning and preprocessing text (lecture and hands-on)
+* 09:30 - 12:00: [Session 1](https://docs.google.com/presentation/d/1NVYQ9k8c3v_EJLnIoHj1Lk01QjKX6LZ_S5533I7vOKY/edit?usp=sharing): Importing, cleaning and preprocessing text (lecture and hands-on)
 * 12:00 - 13:00: Lunch
-* 13:00 - 15:00: Session 2: Three branches of text analysis techniques (lecture and hands-on)
-* 15:00 - 15:45: Session 3: Validation (lecture and discussion)
+* 13:00 - 15:00: [Session 2](https://docs.google.com/presentation/d/1GvOYybyPjS4NRDYV8TLVqqnw1JhxhcMs-GeNDyirhUI/edit?usp=sharing): Three branches of text analysis techniques (lecture and hands-on)
+* 15:00 - 15:45: [Session 3](https://docs.google.com/presentation/d/1RWi6iAhQSRyW1AyZT3Mvf0jbOKrHedT1KXMw_ACIwHk/edit?usp=sharing): Validation (lecture and discussion)
 * 15:45 - 16:30: Free practice and questions
 
 (feel free to take any break you need during the hands-on sessions)
